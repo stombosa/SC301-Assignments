@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+ <head>
+ <meta charset="utf-8">
+ <title>Address</title>
+ <script type="text/javascript">
+ function makeAddress(){ 
+var name = document.getElementById('nameInputBox').value;
+var street = document.getElementById('streetInputBox').value;
+var city = document.getElementById('cityInputBox').value;
+var state = document.getElementById('stateInputBox').value;
+var zip= document.getElementById('zipInputBox').value;
+
+var address = name + '\n' + street+ '\n'  + city + '\n' + state + '\n' + zip;
+document.getElementById('outputDiv').innerText = address;
+
+ }
+ </script>
+ </head>
+ <body>
+  Name  <input type="text" id="nameInputBox"><br/>
+  Street<input type="text" id="streetInputBox"><br/>
+  City <input type="text" id="cityInputBox">
+  State <input type="text" id="stateInputBox">
+  zip Code <input type="text" id="zipInputBox"><br/>
+
+ <button type="button" onclick="makeAddress()">Make Address</button>
+ <div id="outputDiv"></div>
+
+ </body>
+
+</html>
